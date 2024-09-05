@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Playerh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:Playerh.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\IntVector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:IntVector2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IntVector2.h",
+              "DocumentMoniker": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\IntVector2.h",
+              "RelativeDocumentMoniker": "IntVector2.h",
+              "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\IntVector2.h",
+              "RelativeToolTip": "IntVector2.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-05T06:34:56.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Player.cpp",
+              "RelativeDocumentMoniker": "Player.cpp",
+              "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Player.cpp",
+              "RelativeToolTip": "Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-05T06:34:12.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Playerh.h",
+              "DocumentMoniker": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Playerh.h",
+              "RelativeDocumentMoniker": "Playerh.h",
+              "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Playerh.h",
+              "RelativeToolTip": "Playerh.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-05T06:33:59.797Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp*",
+              "RelativeToolTip": "main.cpp*",
+              "ViewState": "AgIAACQAAAAAAAAAAAArwDMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2023-04-18T01:27:21.76Z",
               "EditorCaption": ""
