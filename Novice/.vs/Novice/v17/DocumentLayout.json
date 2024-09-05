@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\KamataEngine\\Novice\\",
+  "WorkspaceRootPath": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\KamataEngine\\Novice\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\KamataEngine\\Novice\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\KamataEngine\\Novice\\main.cpp",
+              "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2023-04-18T01:27:21.76Z",
               "EditorCaption": ""
