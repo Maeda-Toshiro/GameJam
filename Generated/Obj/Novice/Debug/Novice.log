@@ -1,5 +1,12 @@
-﻿  Move.cpp
+﻿  StringUtility.cpp
+  DirectXCommon.cpp
+  WinApp.cpp
+  GameScene.cpp
+  TextureManager.cpp
+  ImGuiManager.cpp
+  Novice.cpp
   main.cpp
-  Novice.vcxproj -> C:\Users\81703\Desktop\新しいフォルダー (6)\GameJam\Generated\Outputs\Debug\Novice.exe
+  Move.cpp
+  Novice.vcxproj -> C:\Users\shota\OneDrive\デスクトップ\PG3\GameJam\Generated\Outputs\Debug\Novice.exe
   0 個のファイルをコピーしました
   0 個のファイルをコピーしました
