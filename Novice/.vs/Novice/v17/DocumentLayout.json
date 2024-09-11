@@ -26,8 +26,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\shota\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\PG3\\GameJam\\Novice\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\shota\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\PG3\\GameJam\\Novice\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAYwJ8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-04-18T01:27:21.76Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -44,7 +58,7 @@
               "RelativeDocumentMoniker": "Move.cpp",
               "ToolTip": "C:\\Users\\shota\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\PG3\\GameJam\\Novice\\Move.cpp",
               "RelativeToolTip": "Move.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-10T03:52:34.041Z",
               "EditorCaption": ""
@@ -57,9 +71,10 @@
               "RelativeDocumentMoniker": "Player.h",
               "ToolTip": "C:\\Users\\shota\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\PG3\\GameJam\\Novice\\Player.h",
               "RelativeToolTip": "Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-10T03:51:57.058Z"
+              "WhenOpened": "2024-09-10T03:51:57.058Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -69,21 +84,9 @@
               "RelativeDocumentMoniker": "move.h",
               "ToolTip": "C:\\Users\\shota\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\PG3\\GameJam\\Novice\\move.h",
               "RelativeToolTip": "move.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwUAAAB7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-10T03:49:35.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\shota\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\PG3\\GameJam\\Novice\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\shota\\OneDrive\\\u30C7\u30B9\u30AF\u30C8\u30C3\u30D7\\PG3\\GameJam\\Novice\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAACIAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2023-04-18T01:27:21.76Z",
+              "WhenOpened": "2024-09-10T03:49:35.36Z",
               "EditorCaption": ""
             }
           ]
