@@ -38,7 +38,7 @@
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\StringUtility.cpp">
       <Filter>KamataEngine\Source</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
+    <ClCompile Include="Move.cpp">
       <Filter>KamataEngine</Filter>
     </ClCompile>
   </ItemGroup>
@@ -114,10 +114,13 @@
     <ClInclude Include="C:\KamataEngine\DirectXGame\base\StringUtility.h">
       <Filter>KamataEngine\Include</Filter>
     </ClInclude>
-    <ClInclude Include="Playerh.h">
+    <ClInclude Include="IntVector2.h">
       <Filter>KamataEngine</Filter>
     </ClInclude>
-    <ClInclude Include="IntVector2.h">
+    <ClInclude Include="move.h">
+      <Filter>KamataEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
       <Filter>KamataEngine</Filter>
     </ClInclude>
   </ItemGroup>
