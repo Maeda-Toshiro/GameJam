@@ -23,7 +23,7 @@ void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& l
 
 		}
 	}
-	//800=960-160
+	//800=960-160aa
 	//800=1270-470
 
 	if (moveLeft == true)
