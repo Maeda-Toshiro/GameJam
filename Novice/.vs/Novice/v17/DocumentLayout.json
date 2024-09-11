@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:Move.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\move.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:move.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\move.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|solutionrelative:move.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BC4A122-F06A-4486-BA08-4C9ACCA4AAB0}|Novice.vcxproj|C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -34,9 +34,9 @@
               "Title": "Move.cpp",
               "DocumentMoniker": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Move.cpp",
               "RelativeDocumentMoniker": "Move.cpp",
-              "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Move.cpp",
-              "RelativeToolTip": "Move.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAPAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\Move.cpp*",
+              "RelativeToolTip": "Move.cpp*",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAYwHAAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-10T03:52:34.041Z",
               "EditorCaption": ""
@@ -56,26 +56,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "move.h",
               "DocumentMoniker": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\move.h",
               "RelativeDocumentMoniker": "move.h",
               "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\move.h",
               "RelativeToolTip": "move.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAB7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-10T03:49:35.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\81703\\Desktop\\\u65B0\u3057\u3044\u30D5\u30A9\u30EB\u30C0\u30FC (6)\\GameJam\\Novice\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAYwD8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2023-04-18T01:27:21.76Z",
               "EditorCaption": ""

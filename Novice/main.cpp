@@ -6,8 +6,8 @@
 
 const char kWindowTitle[] = "";
 
-const int kWindowWidth = 720;
-const int kWindowHeight = 720;
+const int kWindowWidth = 768;
+const int kWindowHeight = 768;
 
 enum Scene {
 	TITLE,
@@ -31,12 +31,12 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	int gameoversp = Novice::LoadTexture("./images/gameover.png");
 
 	int blocksp = Novice::LoadTexture("./images/block.png");
-
+	int enemysp = Novice::LoadTexture("./images/enemy.png");
 
 
 	bool moveRight = false;
 	bool moveLeft = false;
-
+	bool alive = true;
 
 
 
@@ -58,10 +58,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
   {1,1,1,1,1,1,1,1,1,1,1,0},
   {1,0,0,0,0,0,0,0,0,0,0,0},
   {1,0,0,0,0,0,0,0,0,0,0,0},
-  {1,0,0,0,0,0,0,0,0,0,0,1},
-  {1,0,0,0,0,0,0,0,0,0,0,1},
-  {1,0,0,0,0,0,0,0,1,1,0,1},
-  {1,0,0,0,0,0,0,0,1,1,0,1},
+  {1,2,0,0,0,0,0,0,0,0,0,1},
+  {1,2,0,0,0,0,0,0,0,0,0,1},
+  {1,2,2,2,0,0,0,0,1,1,0,1},
+  {1,0,0,2,0,3,3,0,1,1,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,0},
   {1,0,0,0,0,0,0,0,0,0,0,0},
@@ -193,7 +193,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 
 	int scrool = 0;
-	int scUp = 300;
+	int scUp = 600;
 	int scDown = 550;
 	// キー入力結果を受け取る箱
 	char keys[256] = { 0 };
@@ -260,7 +260,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 				}
 			}
 
-			Move(player, blocksize, moveRight, moveLeft, leftTopX, leftTopY, rightTopX, rightTopY, leftBottomX, leftBottomY, rightBottomX, rightBottomY, scrool, scUp, scDown, map);
+			Move(player, blocksize, moveRight, moveLeft, leftTopX, leftTopY, rightTopX, rightTopY, leftBottomX, leftBottomY, rightBottomX, rightBottomY, scrool, scUp, scDown,alive, map);
 
 
 
@@ -272,7 +272,9 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 				scrool = 0;
 			}
 
-
+			if (alive == false) {
+				scene = GAMEOVER;
+			}
 
 
 
@@ -282,8 +284,20 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 			if (keys[DIK_SPACE] && !preKeys[DIK_SPACE]) {
 				scene = PLAY;
 				player.pos.x = 96;
-				player.pos.y = 960;
+				player.pos.y = 96;
 				scrool = 0;
+				alive = true;
+
+				for (int y = 0; y < 150; y++)
+				{
+					for (int x = 0; x < 12; x++)
+					{
+
+						if (map[y][x] == 4) {
+							map[y][x] = 2;
+						}
+					}
+				}
 
 			}
 			if (keys[DIK_ESCAPE] && !preKeys[DIK_ESCAPE]) {
@@ -338,6 +352,19 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 						Novice::DrawSprite((x * blocksize), (y * blocksize) - scrool, blocksp, 1, 1, 0, WHITE);
 					}
+					if (map[y][x] == 2) {
+						Novice::DrawSprite((x* blocksize), (y* blocksize) - scrool, enemysp, 1, 1, 0, WHITE);
+
+					}
+					if (map[y][x] == 3) {
+
+						Novice::DrawSprite((x * blocksize), (y * blocksize) - scrool, blocksp, 1, 1, 0, BLACK);
+					}
+					if (map[y][x] == 4) {
+
+						Novice::DrawSprite((x * blocksize), (y * blocksize) - scrool, blocksp, 1, 1, 0, RED);
+					}
+
 				}
 			}
 

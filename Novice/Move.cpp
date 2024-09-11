@@ -4,7 +4,7 @@
 
 
 void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& leftTopX, int& leftTopY, int& rightTopX, int& rightTopY, int& leftBottomX, int& leftBottomY,
-	int& rightBottomX, int& rightBottomY, int& scrool, int& scUp, int& scDown, int map[150][12])
+	int& rightBottomX, int& rightBottomY, int& scrool, int& scUp, int& scDown, bool& alive, int map[150][12])
 {
 
 	player.velo.y += player.acce.y;
@@ -66,6 +66,55 @@ void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& l
 
 
 	}
+	if (map[leftBottomY][leftBottomX] == 2 ){
+		player.pos.y = float(leftBottomY * blocksize - player.radius);
+		player.velo.y = 0;
+		map[leftBottomY][leftBottomX] = 4;
+
+	}
+	if ( map[rightBottomY][rightBottomX] == 2) {
+		player.pos.y = float(leftBottomY * blocksize - player.radius);
+		player.velo.y = 0;
+		map[rightBottomY][rightBottomX] = 4;
+
+	}
+	if (map[leftTopY][leftBottomX] == 2 || map[rightTopY][rightBottomX] == 2) {
+		player.pos.y = float((leftTopY + 2) * blocksize - player.radius);
+		player.velo.y = 0;
+		alive = false;
+	}
+	if (map[leftTopY][leftTopX] == 2 || map[leftBottomY][leftBottomX] == 2) {
+		player.velo.y = 0;
+		alive = false;
+
+	}
+	if (map[rightTopY][rightTopX] == 2 || map[rightBottomY][rightBottomX] == 2) {
+		player.velo.y = 0;
+		alive = false;
+
+	}
+
+	if (map[leftBottomY][leftBottomX] == 3|| map[rightBottomY][rightBottomX] == 3) {
+		player.pos.y = float(leftBottomY * blocksize - player.radius);
+		player.velo.y = 0;
+		alive = false;
+
+	}
+	if (map[rightTopY][rightTopX] == 3 || map[rightBottomY][rightBottomX] == 3) {
+		player.velo.y = 0;
+		alive = false;
+
+	}
+	if (map[leftTopY][leftTopX] == 3 || map[leftBottomY][leftBottomX] == 3) {
+		player.velo.y = 0;
+		alive = false;
+
+	}
+	if (map[leftTopY][leftBottomX] == 3 || map[rightTopY][rightBottomX] == 3) {
+		player.pos.y = float((leftTopY + 2) * blocksize - player.radius);
+		player.velo.y = 0;
+		alive = false;
+	}
 
 
 
@@ -78,5 +127,6 @@ void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& l
 	}
 	player.pos.y += player.velo.y;
 
-
+	
+	
 }
