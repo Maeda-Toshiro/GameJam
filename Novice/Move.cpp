@@ -4,17 +4,28 @@
 
 
 void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& leftTopX, int& leftTopY, int& rightTopX, int& rightTopY, int& leftBottomX, int& leftBottomY,
-	int& rightBottomX, int& rightBottomY, int& scrool, int& scUp, int& scDown, bool& alive,  int map[150][12])
+	int& rightBottomX, int& rightBottomY, int& scrool, int& scUp, int& scDown, bool& alive, int map[150][12])
 {
 
 	player.velo.y += player.acce.y;
 
+
+
+	leftTopY = (int(player.pos.y) - player.radius) / blocksize;
+	rightTopY = (int(player.pos.y) - player.radius) / blocksize;
+	leftTopX = (int(player.pos.x) - player.radius) / blocksize;
+	rightTopX = (int(player.pos.x) - player.radius) / blocksize;
+	leftBottomX = (int(player.pos.x) - player.radius-1) / blocksize;
+	leftBottomY = (int(player.pos.y) + player.radius - 1) / blocksize;
+	rightBottomX = (int(player.pos.x) + player.radius - 1) / blocksize;
+	rightBottomY = (int(player.pos.y) + player.radius - 1) / blocksize;
+
 	if (moveRight == true)
 	{
-		rightTopX = (int(player.pos.x) + player.radius - 1 + int(player.velo.x)) / blocksize;
+		rightTopX = (int(player.pos.x) + player.radius - 1) / blocksize;
 		rightTopY = (int(player.pos.y) - player.radius) / blocksize;
 
-		rightBottomX = (int(player.pos.x) + player.radius - 1 + int(player.velo.x)) / blocksize;
+		rightBottomX = (int(player.pos.x) + player.radius - 1) / blocksize;
 		rightBottomY = (int(player.pos.y) + player.radius - 1) / blocksize;
 
 
@@ -32,10 +43,10 @@ void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& l
 
 	if (moveLeft == true)
 	{
-		leftTopX = (int(player.pos.x) - player.radius - int(player.velo.x)) / blocksize;
+		leftTopX = (int(player.pos.x) - player.radius) / blocksize;
 		leftTopY = (int(player.pos.y) - player.radius) / blocksize;
 
-		leftBottomX = (int(player.pos.x) - player.radius - int(player.velo.x)) / blocksize;
+		leftBottomX = (int(player.pos.x) - player.radius) / blocksize;
 		leftBottomY = (int(player.pos.y) + player.radius - 1) / blocksize;
 
 
@@ -63,50 +74,38 @@ void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& l
 	}
 
 
-	leftBottomX = (int(player.pos.x) - player.radius) / blocksize;
-	leftBottomY = (int(player.pos.y) + player.radius - 1 + int(player.velo.y)) / blocksize;
-	rightBottomX = (int(player.pos.x) + player.radius - 1) / blocksize;
-	rightBottomY = (int(player.pos.y) + player.radius - 1 + int(player.velo.y)) / blocksize;
+	
 
 
 
-	if (map[leftBottomY][leftBottomX] == 1 || map[rightBottomY][rightBottomX] == 1) {
+	/*if (map[leftBottomY][leftBottomX] == 1 || map[rightBottomY][rightBottomX] == 1) {
 		player.pos.y = float(leftBottomY * blocksize - player.radius);
 		player.velo.y = 0;
 
 
-	}
-	if (map[leftBottomY][leftBottomX] == 2 ){
-		player.pos.y = float(leftBottomY * blocksize - player.radius);
+	}*/
+	if (map[leftBottomY][leftBottomX] == 2) {
+		
 		player.velo.y = 0;
 		map[leftBottomY][leftBottomX] = 4;
 
 	}
-	if ( map[rightBottomY][rightBottomX] == 2) {
-		player.pos.y = float(leftBottomY * blocksize - player.radius);
+	if (map[rightBottomY][rightBottomX] == 2) {
+		
 		player.velo.y = 0;
 		map[rightBottomY][rightBottomX] = 4;
 
 	}
-	if (map[rightTopY][rightBottomX] == 2 || map[rightTopY][rightBottomX] == 2) {
-		player.pos.y = float((leftTopY + 2) * blocksize - player.radius);
-		player.velo.y = 0;
-		alive = false;
-		
-	}
-	if (map[leftTopY][leftTopX] == 2 || map[leftBottomY][leftBottomX] == 2) {
-		player.velo.y = 0;
-		alive = false;
+	if (map[leftTopY][leftBottomX] == 2 || map[rightTopY][rightBottomX] == 2) {
 
-	}
-	if (map[rightTopY][rightTopX] == 2 || map[rightBottomY][rightBottomX] == 2) {
 		player.velo.y = 0;
 		alive = false;
 
 	}
 
-	if (map[leftBottomY][leftBottomX] == 3|| map[rightBottomY][rightBottomX] == 3) {
-		player.pos.y = float(leftBottomY * blocksize - player.radius);
+
+	if (map[leftBottomY][leftBottomX] == 3 || map[rightBottomY][rightBottomX] == 3) {
+
 		player.velo.y = 0;
 		alive = false;
 
@@ -122,22 +121,21 @@ void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& l
 
 	}
 	if (map[leftTopY][leftBottomX] == 3 || map[rightTopY][rightBottomX] == 3) {
-		player.pos.y = float((leftTopY + 2) * blocksize - player.radius);
+		
 		player.velo.y = 0;
 		alive = false;
 	}
 
 
 
-	leftTopY = (int(player.pos.y) - player.radius + int(player.velo.y)) / blocksize;
-	rightTopY = (int(player.pos.y) - player.radius + int(player.velo.y)) / blocksize;
+	
 
 	if (map[leftTopY][leftBottomX] == 1 || map[rightTopY][rightBottomX] == 1) {
-		player.pos.y = float((leftTopY + 2) * blocksize - player.radius);
+	
 		player.velo.y = 0;
 	}
 	player.pos.y += player.velo.y;
 
-	
-	
+
+
 }

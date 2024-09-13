@@ -56,7 +56,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	int map[150][12] = {//マップチップ
   {1,1,1,1,1,1,1,1,1,1,1,1},
-  {1,3,3,3,3,0,0,3,3,3,3,1},
+  {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,2,0,0,0,0,0,0,2,0,1},
@@ -160,10 +160,10 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 
 	int scrool = 0;
-	int scUp = 600; 
+	int scUp = 600;
 	int scDown = 550;
 
-	
+
 	// キー入力結果を受け取る箱
 	char keys[256] = { 0 };
 	char preKeys[256] = { 0 };
@@ -207,18 +207,26 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 			{
 				moveLeft = true;
 			}
+			//
+			if (keys[DIK_W])//Dが押されたら
+			{
+				player.pos.y -= 6;
+			}
 
+			if (keys[DIK_S])//Dが押されたら
+			{
+				player.pos.y += 6;
+			}
+			//
 			if (keys[DIK_R] && !preKeys[DIK_R]) {
+				alive = true;
 				player.pos.x = 96;
 				player.pos.y = 96;
 				scrool = 0;
 
 			}
 
-			if (keys[DIK_SPACE] && !preKeys[DIK_SPACE]) {
-
-				player.acce.y *= -1;
-			}
+			
 
 
 
@@ -229,14 +237,12 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 				}
 			}
 
-			Move(player, blocksize, moveRight, moveLeft, leftTopX, leftTopY, rightTopX, rightTopY, leftBottomX, leftBottomY, rightBottomX, rightBottomY, scrool, scUp, scDown,alive,map);
+			Move(player, blocksize, moveRight, moveLeft, leftTopX, leftTopY, rightTopX, rightTopY, leftBottomX, leftBottomY, rightBottomX, rightBottomY, scrool, scUp, scDown, alive, map);
 
 
 
 
-			if (player.pos.x >= 3750 && player.pos.y > 900) {
-				scene = CLEAR;
-			}
+			
 			if (scrool <= 0) {
 				scrool = 0;
 			}
@@ -251,11 +257,14 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		case GAMEOVER:
 
 			if (keys[DIK_SPACE] && !preKeys[DIK_SPACE]) {
-				scene = PLAY;
-				player.pos.x = 355;
-				player.pos.y = 196;
-				scrool = 0;
 				alive = true;
+				moveRight = false;
+				moveLeft = false;
+				player.pos.y = 110;
+				player.pos.x = 356;
+				
+				scrool = 0;
+				scene = PLAY;
 
 				for (int y = 0; y < 150; y++)
 				{
@@ -322,7 +331,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 						Novice::DrawSprite((x * blocksize), (y * blocksize) - scrool, blocksp, 1, 1, 0, WHITE);
 					}
 					if (map[y][x] == 2) {
-						Novice::DrawSprite((x* blocksize), (y* blocksize) - scrool, enemysp, 1, 1, 0, WHITE);
+						Novice::DrawSprite((x * blocksize), (y * blocksize) - scrool, enemysp, 1, 1, 0, WHITE);
 
 					}
 					if (map[y][x] == 3) {
