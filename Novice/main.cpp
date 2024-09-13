@@ -37,7 +37,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	bool moveRight = false;
 	bool moveLeft = false;
 	bool alive = true;
-
+	bool clear = false;
 
 
 
@@ -60,7 +60,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
   {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,2,0,0,0,0,0,0,2,0,1},
-  {1,0,0,0,0,0,0,0,0,0,0,1},
+  {1,0,0,0,0,5,0,0,0,0,0,1},
   {1,3,0,0,2,0,0,2,0,0,3,1},
   {1,0,0,3,0,0,0,0,3,0,0,1},
   {1,0,0,0,0,0,2,0,0,0,0,1},
@@ -131,7 +131,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
   {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,1},
-  {1,0,0,0,0,0,0,0,0,0,0,1},
+  {1,0,3,0,0,0,0,0,0,3,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,1},
   {1,0,0,0,0,0,0,0,0,0,0,1},
@@ -237,7 +237,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 				}
 			}
 
-			Move(player, blocksize, moveRight, moveLeft, leftTopX, leftTopY, rightTopX, rightTopY, leftBottomX, leftBottomY, rightBottomX, rightBottomY, scrool, scUp, scDown, alive, map);
+			Move(player, blocksize, moveRight, moveLeft, leftTopX, leftTopY, rightTopX, rightTopY, leftBottomX, leftBottomY, rightBottomX, rightBottomY, scrool, scUp, scDown, alive,clear, map);
 
 
 
@@ -251,7 +251,9 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 				scene = GAMEOVER;
 			}
 
-
+			if (clear == true) {
+				scene = CLEAR;
+			}
 
 			break;
 		case GAMEOVER:
@@ -285,10 +287,24 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		case CLEAR:
 			if (keys[DIK_SPACE] && !preKeys[DIK_SPACE]) {
 				scene = PLAY;
-				player.pos.x = 96;
-				player.pos.y = 960;
+				moveRight = false;
+				moveLeft = false;
+				player.pos.y = 110;
+				player.pos.x = 356;
+				clear = false;
 				scrool = 0;
+				scene = PLAY;
 
+				for (int y = 0; y < 150; y++)
+				{
+					for (int x = 0; x < 12; x++)
+					{
+
+						if (map[y][x] == 4) {
+							map[y][x] = 2;
+						}
+					}
+				}
 			}
 			if (keys[DIK_ESCAPE] && !preKeys[DIK_ESCAPE]) {
 				scene = TITLE;

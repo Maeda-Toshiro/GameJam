@@ -4,7 +4,7 @@
 
 
 void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& leftTopX, int& leftTopY, int& rightTopX, int& rightTopY, int& leftBottomX, int& leftBottomY,
-	int& rightBottomX, int& rightBottomY, int& scrool, int& scUp, int& scDown, bool& alive, int map[150][12])
+	int& rightBottomX, int& rightBottomY, int& scrool, int& scUp, int& scDown, bool& alive,bool&clear, int map[150][12])
 {
 
 	player.velo.y += player.acce.y;
@@ -126,13 +126,22 @@ void Move(Player& player, int blocksize, bool& moveRight, bool& moveLeft, int& l
 		alive = false;
 	}
 
-
-
-	
-
-	if (map[leftTopY][leftBottomX] == 1 || map[rightTopY][rightBottomX] == 1) {
-	
+	if (map[leftBottomY][leftBottomX] == 5 || map[rightBottomY][rightBottomX] == 5) {
 		player.velo.y = 0;
+		clear = true;
+
+	}
+
+	
+
+	if (map[leftTopY][leftBottomX] == 1 ) {
+	
+		moveLeft = false;
+	}
+
+	if ( map[rightTopY][rightBottomX] == 1) {
+
+		moveRight = false;
 	}
 	player.pos.y += player.velo.y;
 
